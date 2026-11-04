@@ -7,8 +7,9 @@ __pycache__/
 
 # Exported model packages: publish FXBEX through Hugging Face instead
 *.fxbex
-/fxbex/
-/models/
+/fxbex
+/models
+/portable_source
 
 # Generated NPU binaries and execution output
 *.runnable
@@ -17,6 +18,7 @@ __pycache__/
 *.log
 *.npz
 /progress.lock
+/web_server.pid
 /validated_detections.png
 
 # Generated image assets
