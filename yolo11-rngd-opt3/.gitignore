@@ -1,0 +1,25 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv
+.env
+.env.*
+
+# Exported model packages: publish FXBEX through Hugging Face instead
+*.fxbex
+/fxbex/
+/models/
+
+# Generated NPU binaries and execution output
+*.runnable
+/runs/
+/web_outputs/
+*.log
+*.npz
+/progress.lock
+/validated_detections.png
+
+# Generated image assets
+*.png
+*.jpg
+*.jpeg
