@@ -11,7 +11,7 @@ __pycache__/
 /models
 /portable_source
 
-# Generated NPU binaries and execution output
+# Generated NPU binaries, execution output and reports
 *.runnable
 /runs/
 /web_outputs/
@@ -20,6 +20,13 @@ __pycache__/
 /progress.lock
 /web_server.pid
 /validated_detections.png
+/campaign_status.json
+/environment.json
+/final_summary.json
+/png_benchmark.json
+/portable_capture_result.json
+/progress.json
+/web_validation.json
 
 # Generated image assets
 *.png
