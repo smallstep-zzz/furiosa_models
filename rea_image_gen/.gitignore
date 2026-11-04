@@ -1,0 +1,5 @@
+# Local model exports are large and are published through Hugging Face.
+/fxb/
+/FXB/
+/fxbex/*.fxbex
+*.fxbex
