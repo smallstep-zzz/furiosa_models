@@ -1,0 +1,13 @@
+# Python >=3.10. Install into an image-generation environment, not the Furiosa-LLM service environment.
+# The torch==2.10.0 specifier accepts the installed 2.10.0+cpu wheel required by Furiosa.
+torch==2.10.0
+numpy==2.2.6
+furiosa-torch==2026.4.0
+furiosa-kernels==2026.4.0
+furiosa-kernels-contrib==2026.4.0
+furiosa-tcc==2026.4.0
+diffusers==0.41.0
+transformers==5.20.2
+huggingface-hub==1.33.0
+accelerate==1.14.0
+gradio==6.31.0
