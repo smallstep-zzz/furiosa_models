@@ -1,0 +1,19 @@
+{
+  "status": "EXPORT_BRIDGE_GAP",
+  "fxb_created": false,
+  "requested_output": "/root/rea_image_gen/FXB/RedHatAI--Qwen3.5-9B-FP8-dynamic__text-bf16__fusion8__ctx512__sdk2026.4.0.fxb",
+  "source_model": "RedHatAI/Qwen3.5-9B-FP8-dynamic",
+  "compute_dtype": "bfloat16",
+  "source_quantization": "FP8-dynamic",
+  "scope": "text-only",
+  "fusion": 8,
+  "context_capacity": 512,
+  "sdk": "2026.4.0",
+  "existing_runtime": "/root/rngd-model-forge/compiler_engine/qwen35_runtime.py",
+  "existing_npu_evidence_report": "/root/rngd-model-forge/docs/QWEN_CPU_DIAGNOSIS.md",
+  "official_build_failure_result": "/root/rngd-model-forge/reports/rngd_porting/runs/fxb_qwen35-9b_1793650325526981004/result.json",
+  "public_builder_signature": "(model_path, output_path, tensor_parallel_size=None, pipeline_parallel_size=None, max_model_len=None, optim_level=None, dry_run=False, build_report=False, convert=None, concurrency=None, no_compiler_cache=False, compiler_cache_dir=None, dump_tc=None, skip_bucket_validation=False, enable_collective_dq=False, enable_mtp=True, enable_sampler=True, fast_fail=True, tokenwise_buckets=None, attention_buckets=None, exclude_attention_buckets=None, slow_kernel_threshold_secs=900)",
+  "reason": "Official model builder does not accept the project TCL plan; original architecture registry lookup rejects Qwen3_5ForConditionalGeneration before consuming project kernels.",
+  "next_required_work": "Public custom-plan FXB writer and matching weight/state loader binding; do not rename compiler cache as FXB.",
+  "compile_repeated": false
+}

@@ -1,0 +1,16 @@
+Qwen FXB_EX 실행 패키지 (공식 FXB 아님)
+
+실행:
+  cd /root/rngd-model-forge
+  fxbex chat /root/rea_image_gen/FXB/RedHatAI--Qwen3.5-9B-FP8-dynamic__text-bf16__fusion8__ctx512__sdk2026.4.0.fxbex
+
+검사: fxbex inspect /root/rea_image_gen/FXB/RedHatAI--Qwen3.5-9B-FP8-dynamic__text-bf16__fusion8__ctx512__sdk2026.4.0.fxbex
+웹 UI: fxbex ui --port 7861
+
+가중치는 이 경량 패키지에 포함되지 않습니다. 기존 HF 캐시의 원본 FP8 체크포인트를 BF16으로 준비해 실행합니다.
+가중치 위치 변경 시 --weights-dir /path/to/snapshot 을 지정하세요. 해시가 일치해야 합니다.
+패키지는 검증된 SDK Runnable 25종을 재사용합니다. 새 프로세스에서 컴파일 0회로 NPU 실행 및 4→12 대화를 검증했습니다.
+적재 시 그래프 재구성과 가중치 준비가 남아 약 191초가 걸렸습니다.
+텍스트 전용, fusion8, 전체 입력+출력 512토큰 한도, SDK2026.4.0 및 일치하는 프로젝트 런타임이 필요합니다.
+다른 모델이 NPU를 점유하면 먼저 해제하세요.
+자세한 설명: /root/rngd-model-forge/docs/FXB_EX.md
